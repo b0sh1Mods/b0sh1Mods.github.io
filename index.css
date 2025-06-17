@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.Home {
+    color: white;
+}
+
+.Gecko {
+    color: red;
+}
+
+.GeckoCodes {
+    margin-left: 50px;
+    margin-top: -18px;
+}
+
+.MainText {
+    color: white;
+    font-size: 80px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
