@@ -16,11 +16,6 @@ function downloadGCT() {
         return;
     }
 
-    if (!rawCodes || !/^[A-Z0-9]{8}$/.test(gameID)) {
-        alert("Enter a valid Gecko Code.");
-        return;
-    }
-
     const startHeader = "00D0C0DE00D0C0DE";
     const endFooter = "F000000000000000";
 
