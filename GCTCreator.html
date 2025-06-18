@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GCT Creator</title>
+    <link rel="stylesheet" href="GCTCreator.css">
+</head>
+<body>
+    <div class="HomeButton">
+        <a href="index.html" target="_blank" class="Home">Home</a>
+    </div>
+    <div class="GeckoCodes">
+        <a href="GeckoCodes.html" target="_blank" class="Gecko">Gecko Codes</a>
+    </div>
+    <div class="GCTCreator">
+        <a href="GCTCreator.html" target="_blank" class="GCT">GCT Creator</a>
+    </div>
+    <div class="Title">
+        <h1>GCT Creator</h1>
+        <p>Enter a Gecko code and the region for the game to generate a GCT file</p>
+    </div>
+
+    <div class="GameID">
+        <label for="GameID">Enter Game's ID</label><br>
+        <textarea id="GameID"></textarea><br>
+    </div>
+
+    <div class="GeckoASMCode">
+        <label for="code">Enter Gecko Code</label><br>
+        <textarea id="code"></textarea><br>
+    </div>
+
+    <div class="DownloadGCT">
+        <button onclick="downloadGCT()">Download GCT</button>
+    </div>
+
+    <script src="GCTCreator.js"></script>
+</body>
+</html>

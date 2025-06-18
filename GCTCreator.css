@@ -1,0 +1,25 @@
+.Home {
+    color: black;
+}
+
+.Gecko {
+    color: red;
+}
+
+.GeckoCodes {
+    margin-left: 50px;
+    margin-top: -18px;
+}
+
+.GCT {
+    color: blue;
+}
+
+.GCTCreator {
+    margin-left: 150px;
+    margin-top: -18px;
+}
+
+.Title {
+    text-align: center;
+}
