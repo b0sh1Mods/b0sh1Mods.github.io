@@ -1,0 +1,40 @@
+body {
+   cursor: url('cursor/wii-pointer-ccw.cur'),auto;
+}
+
+#BackgroundIMG {
+  width: 1920px;
+  height: 1080px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.GlobeIMG {
+    margin-top: -1000px;
+    margin-left: 800px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+#Button1 {
+  margin-top: -950px;
+  margin-left: 20px;
+}
+
+#Button2 {
+  margin-top: -800px;
+  margin-left: 20px;
+}
