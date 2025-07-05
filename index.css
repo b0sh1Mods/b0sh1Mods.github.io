@@ -3,14 +3,14 @@ body {
 }
 
 #BackgroundIMG {
-  width: 1920px;
-  height: 1080px;
+  width: 1292px;
+  height: 543px;
   margin-top: -20px;
   margin-left: -20px;
 }
 
 .GlobeIMG {
-    margin-top: -1000px;
+    margin-top: -450px;
     margin-left: 800px;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
@@ -30,11 +30,11 @@ body {
 }
 
 #Button1 {
-  margin-top: -950px;
+  margin-top: -400px;
   margin-left: 20px;
 }
 
 #Button2 {
-  margin-top: -800px;
+  margin-top: -250px;
   margin-left: 20px;
 }
