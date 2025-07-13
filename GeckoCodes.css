@@ -1,9 +1,10 @@
 body {
     cursor: url('cursor/wii-pointer-ccw.cur'),auto;
+    background-color: var(--base-color);
 }
 
 .Home {
-    color: black;
+    color: var(--text-color);
 }
 
 .Gecko {
@@ -33,6 +34,54 @@ body {
     margin-top: -18px;
 }
 
+:root {
+    --base-color: white;
+    --text-color: black;
+    --theme-button: black;
+    --IdkWhatToNameThis: gray;
+    --gray-square: #E8E8E8;
+}
+
+.darkmode {
+    --base-color: rgb(17, 17, 17);
+   --gray-square: #60606060;
+    --text-color: rgb(255, 255, 255);
+    --theme-button: white;
+}
+
+#theme-switch {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: 1190px;
+    background-color: var(--theme-button);
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#theme-switch svg {
+    fill: var(--IdkWhatToNameThis);
+    width: 24px;
+    height: 24px;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
 .MainFrame {
     width: 800px;
     float: left;
@@ -47,7 +96,7 @@ body {
     border-width: 3px;
     border-style: solid;
     border-color: #19b0e9;
-    background: #FFFFFF;
+    background-color: var(--base-color);
     color: #000000;
     min-height: 125px;
 }
@@ -74,7 +123,7 @@ body {
     margin-top: -53px;
     margin-left: 250px;
     font-size: 13px;
-    color: white;
+    color: var(--text-color);
     font-family: sans-serif;
 }
 
@@ -98,6 +147,7 @@ body {
     font-family: sans-serif;
     font-size: 7px;
     margin-left: 20px;
+    color: var(--text-color);
 }
 
 .Code {
@@ -105,24 +155,27 @@ body {
     font-size: 13px;
     margin-top: -10px;
     margin-left: 20px;
+    color: var(--text-color);
 }
 
 .Caution {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 25px;
     margin-top: -15px;
+    color: var(--text-color);
 }
 
 .GraySquare {
     width: 800px;
     height: 70px;
-    background-color: #E8E8E8;
+    background-color: var(--gray-square);
     margin-top: -10px;
 }
 
 .Warning {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
 }
 
 .MainPage {
