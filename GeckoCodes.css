@@ -127,7 +127,7 @@ body {
     font-family: sans-serif;
 }
 
-.WiiSportsNTSCSub {
+.NewSub {
     width: 780px;
     border-width: 4px;
     border-color: #19b0e9;
@@ -141,6 +141,7 @@ body {
     font-weight: bolder;
     font-family: sans-serif;
     margin-left: 7px;
+    margin-top: 10px;
 }
 
 .CodeTitle {
@@ -188,126 +189,7 @@ body {
     color: red;
 }
 
-.WiiSportsPALSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 7px;
-    margin-top: 30px;
-}
-
-.WiiPlayNTSCSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 7px;
-    margin-top: 30px;
-}
-
-.WSRNTSCSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 7px;
-    margin-top: 30px;
-}
-
-.WSRPALSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;  
-    margin-left: 4px;  
-    margin-top: 30px;
-}
-
-.WSRRFSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 4px;
-    margin-top: 30px;
-}
-
 .Creator {
     color: #0000CC;
     text-decoration: none;
-}
-
-.WPRFSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 4px;
-    margin-top: 30px;
-}
-
-.WPNTSCSub {
-    width: 780px;
-    border-width: 4px;
-    border-color: #19b0e9;
-    border-top-style: none;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    color: #FFFFFF;
-    background: #19b0e9;
-    font-size: 11pt;
-    font-weight: bolder;
-    font-family: sans-serif;
-    margin-left: 4px;
-    margin-top: 30px;
 }
