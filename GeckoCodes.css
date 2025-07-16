@@ -157,6 +157,7 @@ body {
     margin-top: -10px;
     margin-left: 20px;
     color: var(--text-color);
+    max-width: 150px;
 }
 
 .Caution {
