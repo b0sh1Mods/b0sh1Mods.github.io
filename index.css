@@ -3,63 +3,37 @@ body {
 }
 
 #BackgroundIMG {
-  width: 1292px;
-  height: 543px;
+  width: 1290px;
+  height: 720px;
   margin-top: -20px;
   margin-left: -20px;
 }
 
-.GlobeIMG {
-    margin-top: -450px;
-    margin-left: 800px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
-
 #Button1 {
-  margin-top: -470px;
-  margin-left: 20px;
-  width: 350px;
-  height: 88px;
+  margin-top: -665px;
+  margin-left: 85px;
+  width: 264px;
+  height: 146px;
 }
 
 #Button2 {
-  margin-top: -380px;
-  margin-left: 20px;
-  width: 350px;
-  height: 88px;
+  margin-top: -665px;
+  margin-left: 355px;
+  width: 264px;
+  height: 146px;
 }
 
 #Button3 {
-  margin-top: -290px;
-  margin-left: 20px;
-  width: 350px;
-  height: 88px;
+  margin-top: -665px;
+  margin-left: 625px;
+  width: 264px;
+  height: 146px;
 }
 
-#Button4 {
-  margin-top: -200px;
-  margin-left: 20px;
-  width: 350px;
-  height: 88px;
+button {
+  all: unset;
 }
 
-#Button5 {
-  margin-top: -110px;
-  margin-left: 20px;
-  width: 350px;
-  height: 88px;
+button:focus {
+  outline: revert;
 }
