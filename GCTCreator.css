@@ -1,9 +1,10 @@
 body {
     cursor: url('cursor/wii-pointer-ccw.cur'),auto;
+    background-color: var(--base-color);
 }
 
 .Home {
-    color: black;
+    color: var(--text-color);
 }
 
 .Gecko {
@@ -33,6 +34,62 @@ body {
     margin-top: -18px;
 }
 
-.Title {
-    text-align: center;
+:root {
+    --base-color: white;
+    --text-color: black;
+    --theme-button: black;
+    --IdkWhatToNameThis: gray;
+}
+
+.darkmode {
+    --base-color: rgb(17, 17, 17);
+    --header-color: red;
+    --text-color: rgb(255, 255, 255);
+    --theme-button: white;
+    --IdkWhatToNameThis: gray;
+}
+
+#theme-switch {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: 1220px;
+    background-color: var(--theme-button);
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#theme-switch svg {
+    fill: var(--IdkWhatToNameThis);
+    width: 24px;
+    height: 24px;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+.TitleText {
+    color: var(--text-color);
+}
+
+.GameID {
+    color: var(--text-color);
+}
+
+.GeckoASMCode {
+    color: var(--text-color);
 }
