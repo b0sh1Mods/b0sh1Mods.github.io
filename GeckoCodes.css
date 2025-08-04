@@ -34,26 +34,35 @@ body {
     margin-top: -18px;
 }
 
+.Guides {
+    color: green;
+}
+
+.GuidesNShit {
+    margin-left: 370px;
+    margin-top: -18px;
+}
+
 :root {
     --base-color: white;
     --text-color: black;
     --theme-button: black;
     --IdkWhatToNameThis: gray;
-    --gray-square: #E8E8E8;
 }
 
 .darkmode {
     --base-color: rgb(17, 17, 17);
-   --gray-square: #60606060;
+    --header-color: red;
     --text-color: rgb(255, 255, 255);
     --theme-button: white;
+    --IdkWhatToNameThis: gray;
 }
 
 #theme-switch {
     width: 50px;
     height: 50px;
     margin-top: -25px;
-    margin-left: 1190px;
+    margin-left: 1220px;
     background-color: var(--theme-button);
     padding: 0;
     border-radius: 50%;
@@ -81,6 +90,7 @@ body {
 .darkmode #theme-switch svg:last-child {
     display: block;
 }
+
 
 .MainFrame {
     width: 800px;

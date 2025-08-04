@@ -91,14 +91,50 @@ body {
     display: block;
 }
 
-
-.TitleText {
-  text-align: center;
-  color: var(--text-color);
+.TableOfContents {
+    width: 300px;
+    float: left;
+    padding: 0px;
+    padding-bottom: 10px;
+    display: inline;
+    font-size: 10pt;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: green;
+    background-color: var(--base-color);
+    min-height: 125px;
 }
 
-.CopyrightThing {
-  text-align: center;
-  margin-top: 390px;
-  color: var(--text-color);
+.TOCTextTitle{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.TOContents {   
+    font-size: large;
+}
+
+.ButtonTut {
+    color: red;
+}
+
+.TutorialTitle1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    margin-top: 590px;
+}
+
+.TutorialText {
+    color: var(--text-color);
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+.IMGExample {
+    width: 640px;
+    height: 528px;
 }
