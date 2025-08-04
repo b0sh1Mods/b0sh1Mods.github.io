@@ -1,0 +1,104 @@
+body {
+    cursor: url('cursor/wii-pointer-ccw.cur'),auto;
+    background-color: var(--base-color);
+}
+
+.Home {
+    color: var(--text-color);
+}
+
+.Gecko {
+    color: red;
+}
+
+.GeckoCodes {
+    margin-left: 50px;
+    margin-top: -18px;
+}
+
+.GCT {
+    color: blue;
+}
+
+.GCTCreator {
+    margin-left: 150px;
+    margin-top: -18px;
+}
+
+.Unused {
+    color: purple;
+}
+
+.UnusedContent {
+    margin-left: 250px;
+    margin-top: -18px;
+}
+
+.Guides {
+    color: green;
+}
+
+.GuidesNShit {
+    margin-left: 370px;
+    margin-top: -18px;
+}
+
+:root {
+    --base-color: white;
+    --text-color: black;
+    --theme-button: black;
+    --IdkWhatToNameThis: gray;
+}
+
+.darkmode {
+    --base-color: rgb(17, 17, 17);
+    --header-color: red;
+    --text-color: rgb(255, 255, 255);
+    --theme-button: white;
+    --IdkWhatToNameThis: gray;
+}
+
+#theme-switch {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: 1220px;
+    background-color: var(--theme-button);
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#theme-switch svg {
+    fill: var(--IdkWhatToNameThis);
+    width: 24px;
+    height: 24px;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+
+.TitleText {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.CopyrightThing {
+  text-align: center;
+  margin-top: 390px;
+  color: var(--text-color);
+}
