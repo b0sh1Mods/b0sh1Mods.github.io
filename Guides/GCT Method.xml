@@ -1,0 +1,6 @@
+<memory valuefile="codehandler.bin" offset="0x80001800" />
+		<memory value="8000" offset="0x00001CDE" />
+		<memory value="28B8" offset="0x00001CE2" />
+		<memory value="8000" offset="0x00001F5A" />
+		<memory value="28B8" offset="0x00001F5E" />
+		<memory valuefile="/sebee/BowGCT/13.gct" offset="0x800028B8" />

@@ -1,0 +1,15 @@
+<wiidisc version="1">
+	<id game="Replace this with Game ID (Excluding Region and Company Code)" />
+	<options>
+		<section name="Replace with the Mod Name">
+			<option name="Replace with a option (usually the mod name)">
+				<choice name="Enabled">
+					<patch id="Replace With Patch ID (No Spaces or unique characters)" />
+				</choice>
+			</option>
+		</section>
+	</options>
+	<patch id="Patch ID of the choice">
+		<!--Add your folder and files here-->
+	</patch>
+</wiidisc>
