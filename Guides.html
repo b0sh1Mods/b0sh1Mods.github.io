@@ -38,6 +38,9 @@
     <div class="TOContents">
         <a href="#ButtonActivation" class="ButtonTut">1. Button Activators</a>
     </div>
+    <div class="TOContents">
+        <a href="#RiivoXMLStarter" class="ButtonTut">2. Riivolution XML</a>
+    </div>
   </div>
   <div class="TutorialTitle1">
     <h1><a id="ButtonActivation" name="ButtonActivation">How to make a Button Activator (Wii)</a></h1>
@@ -68,7 +71,52 @@
     <img class="IMGExample" src="Guides/DolphinGeckoCodes.png">
     <br>Click "Add New Code...", give it a name, and put the address in the Code Text Box. Replace the 80 with 20 to make it a If Equal code. Subtract 2 (in Hex) from the address (0xA - 0x2 = 0x8). Add 0000XXXX (Replace X's with the Button you want). Add the Code you want the button to trigger when pressed, and add "E0000000 80008000". (Optional: Add CC000000 00000000 to make it be like a On/Off Gecko Codes) It should look like this.</br>
     <img class="IMGExample" src="Guides/GeckoCodeTemplate.png">
-    <br>If you did it right, you just made your own button activator! Hopefully this helps -Boshi
+    <br>If you did it right, you just made your own button activator!
+  </div>
+  <div class="TutorialTitle">
+    <h1><a id="RiivoXMLStarter" name="RiivoXMLStarter">Riivolution XML Full Guide</a></h1>
+  </div>
+  <div class="TutorialText">
+    <br>Tools:
+    <br>VS Code (You can use the Web build of it)
+    <br>Dolphin
+    <br>Wii/Wii U Console
+    <br>Disc of your game
+    <br>PyiiASMH 3 (Dolphin Debug Mode works too)
+    <br><br><br>This tutorial is just Riivolution XML I'll assume you already know how to add custom files and how to extract files from the disc.
+    <br><br><br>First, I would recommend you downloading this template I made. In order to download it, right-click on it and click "Save link as"</br>
+    <br><a href="Guides/InsertNameHere.xml" class="DownloadButton">Riivolution XML Template</a></br>
+    <br>It should look like this</br>
+    <img class="IMGExample" src="Guides/RiivoTemp.png">
+    <br>I'll put my own mod example for OGWS to show you. First I'll show you how to add more choices. There are 7 things that make up a riivoltion XML (only pointing the important ones)</br>
+    <br>WiiDisc: This allows riivoltion to determine what game the mod is for.
+    <br>Options: If I had to give an accurate description, it would be to power everything else as without this the whole mod wouldn't work
+    <br>Section: The Page (you can have multiple in one XML)
+    <br>Option: Not the same as Options, this give what options you're mod will have
+    <br>Choice: The choice for the option
+    <br>Patch: This is what is responsible for loading the files, folders, cheats, and more
+    <br>/: Yes I included this. This is this in front of all of the other options and it means that it is the end of that thing.
+    <br><br>Enought about that, now I'll tell you how to to more choices. After you see the /Choice you will copy over the choice name and Rename it. You are also going to want to add the Patch ID and rename that too. After that add the /choice again, copy the patch id at the bottom (including /patch) and paste it under the first /patch, and it should look like this.</br>
+    <img class="IMGExample" src="Guides/RiivoTemp1.png">
+    <br>To add more options just do the same thing as choice, but with options (I don't know how to explain it). Make sure to add the choices and Patches of course.</br>
+    <img class="IMGExample" src="Guides/RiivoTemp2.png">
+    <br>You can do the same thing for sections if you want multiple pages. Now onto the cheats, first the 04 method, this CAN work with C2 Codes if you know how to disassemble them and reassemble them as 04 Codes
+    <br>Say we have this gecko code "04332814 2C000001", the address that is being used is "80332814", so we would do it like this.</br>
+    <br><a href="https://aerialx.github.io/rvlution.net/wiki/Patch_Format/#Memory_Patch" class="DownloadButton">Memory Patch (ignore the orginal part for now)</a>
+    <br><br><br>Replace the Memory Offset with your address and the value with your value, if you did it right it should look something like this.</br>
+    <img class="IMGExample" src="Guides/RiivoTemp3.png">
+    <br>The max you can do this at is 0x817FFFFF for some reason. Now the GCT method
+    <br>This method isn't too good as the way GCTS work is that you can only have what you put in and nothing else or else only one will work, so only use this where you're using F6 Codes or Conditional Codes
+    <br><br>What you are going to want to do is copy this down (Replace the valuefile with your own .gct file).
+    <br><a href="Guides/GCT Method.xml" class="DownloadButton">GCT Method</a>
+    <br><a href="Guides/codehandler.bin" class="DownloadButton">Code Handler</a></br>
+    <br>It should look like this (use my GCT Creator to make the GCT)
+    <img class="IMGExample" src="Guides/RiivoTemp4.png">
+    <br>Now the search patch method, this is the most useful if you know how to implement it right. The other two methods only work in it's region (unless if it's an F6 code), search patches can help get rid of needing multiple codes (sometimes it does fail tho). JimmyKazakhstan has a more detailed explaination on how they work as well as generators for Riivolution Patches.</br>
+    <br><a href="https://jimkatz.github.io/RiivolutionPatchGenerator.html" class="DownloadButton">Riivolution + PowerPC + Gecko Generators</a>
+    <br>I would recommend you to look at that as he goes more in depth on how this works. It should look like this
+    <img class="IMGExample" src="Guides/RiivoTemp5.png">
+    <br>Hopefully this all made sense to you, I'm not really good with explaining things over text, so sorry if it looks like I skipped over some stuff, I just can't explain things the best without a video.
   </div>
     </body>
 </html>
