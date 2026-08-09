@@ -16,11 +16,11 @@ body {
     margin-top: -18px;
 }
 
-.GCT {
+.Support {
     color: blue;
 }
 
-.GCTCreator {
+.SupportPage {
     margin-left: 150px;
     margin-top: -18px;
 }
@@ -90,7 +90,6 @@ body {
 .darkmode #theme-switch svg:last-child {
     display: block;
 }
-
 
 .DiscOGWSIMG {
     width: 370px;

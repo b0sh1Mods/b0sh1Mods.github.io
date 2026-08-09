@@ -91,60 +91,14 @@ body {
     display: block;
 }
 
-.TableOfContents {
-    width: 300px;
-    float: left;
-    padding: 0px;
-    padding-bottom: 10px;
-    display: inline;
-    font-size: 10pt;
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: green;
-    background-color: var(--base-color);
-    min-height: 125px;
-}
-
-.TOCTextTitle{
+.TitleText {
     color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
 
-.TOContents {   
-    font-size: large;
-}
-
-.ButtonTut {
-    color: red;
-}
-
-.TutorialTitle1 {
-    font-family: Arial, Helvetica, sans-serif;
+.GameID {
     color: var(--text-color);
-    margin-top: 590px;
 }
 
-.TutorialTitle {
-    font-family: Arial, Helvetica, sans-serif;
+.GeckoASMCode {
     color: var(--text-color);
-    margin-top: 50px;
-}
-
-.TutorialText {
-    color: var(--text-color);
-    margin-top: 10px;
-    max-width: 500px;
-}
-
-.IMGExample {
-    max-width: 640px;
-    max-height: 528px;
-}
-
-.DownloadButton {
-    color: darkblue;
 }
