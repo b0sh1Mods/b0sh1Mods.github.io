@@ -41,6 +41,9 @@
     <div class="TOContents">
         <a href="#RiivoXMLStarter" class="ButtonTut">2. Riivolution XML</a>
     </div>
+    <div class="TOContents">
+        <a href="#CustomChargeCourse" class="ButtonTut">3. Custom Charge Stages [WIP]</a>
+    </div>
   </div>
   <div class="TutorialTitle1">
     <h1><a id="ButtonActivation" name="ButtonActivation">How to make a Button Activator (Wii)</a></h1>
@@ -117,6 +120,53 @@
     <br>I would recommend you to look at that as he goes more in depth on how this works. It should look like this
     <img class="IMGExample" src="Guides/RiivoTemp5.png">
     <br>Hopefully this all made sense to you, I'm not really good with explaining things over text, so sorry if it looks like I skipped over some stuff, I just can't explain things the best without a video.
+  </div>
+  <div class="TutorialTitle">
+    <h1><a id="CustomChargeCourse" name="CustomChargeCourse">How to make a Custom Charge Stage (Wii Play) [WORK IN PROGRESS]</a></h1>
+  </div>
+  <div class="TutorialText">
+    <br>Tools:
+    <br>ROM of Wii Play you have LEGALLY
+    <br>Dolphin
+    <br>Brawlcrate
+    <br>3D Model Software (Blender for this)
+    <br>KCL, PMP, and KMP Editors (Provided here)
+    <br><br><br>Go to Dolphin and find your path with your ROMS, right click on the Wii Play one and click "Properties", go to "Filesystem", and right-click on the one that says "Disc" and click "Extract Entire Partition". Make a new folder and put it in There
+    <br><br>Get any 3D Model you want, I'll be using SNES Mario Circuit 1 from Mario Kart DS, open it in your 3D Modeling software (Blender for me) and if it's one object, go to "Edit Mode" and click P to seperate by Materials. Go back into Object Mode and size it to your liking
+    <img class="IMGExample" src="Guides/ChargeExample1.png">
+    <br>Once it's scaled to something big enough and you like, you can export the file as an .obj file into a new folder (DO NOT CLICK THE LEGACY ONE)
+    <img class="IMGExample" src="Guides/ChargeExample2.png">
+    <br><br>Next, we're going to work on the collision. Download the .zip file to get access to all the tools for this. You'll need ALL of them for later.
+    <br><br><a href="Guides/CustomWiiModelTools.zip">CustomWiiModelTools.zip</a>
+    <br><br>For now, open KCL Importer and Lorenzi's KMP Editor. On the KCL Importer, click "From Object" and select the .obj file you exported. Select Material by Meshes, Change the Game to Default and the Platform to Wii. Here are each collision type (THESE ARE JUST MY GUESSES):
+    <br><br><br>0x1: Road
+    <br>0x2: Grass
+    <br>0x3: Fence
+    <br><br><br>If anyone wants to correct me on this, let me know. Set these collision values for each object (Remember which is which). The KCL will then export (unless there's too much polygons) and save it. Open Lorenzi's KMP Editor and click "Import Model". Select the .kcl file and click the objects tab. Click Alt+Left-Click and check the Y Axis (THIS IS VERY IMPORTANT)
+    <img class="IMGExample" src="Guides/ChargeExample3.png">
+    <br>Go back into your 3D Modeling software and move to object down, if you're on Blender, a tab called "Move" will appear. Expand it and change the Z to -[Original Y Axis Value].
+    <img class="IMGExample" src="Guides/ChargeExample4.png">
+    <br>Export the .obj again and repeat the same steps from earlier. If you did it right, the Y axis should show 0 (with decimals).
+    <img class="IMGExample" src="Guides/ChargeExample5.png">
+    <br>Why do this? In Charge, the cow can NOT go up at all, even with PMP editing and working collision. The only exception to this is the cow jumping
+    <br><br>Exit the 3D Modeling Software and then open it again (Sounds very stupid but just wait). Import the .obj file and rotate it -90 by it's X Axis (for some reason, BrawlCrate just rotates it 90 degrees when importing). Export as .dae and open BrawlCrate.
+    <br>Open "Common/RPCowScene/common.carc" from the folder with your Wii Play Data into Brawlcrate. You'll need to focus on 3 files for this
+    <br><br>1. cow_field1P.kcl
+    <br>2. cow_field1P.pmp
+    <br>3. G3D/cow_field.bress/3DModels(N4WR)/cow_field1P.mdl0
+    <img class="IMGExample" src="Guides/ChargeExample6.png">
+    <br>Replace the kcl with your modified one. Export the .pmp for later and right-click on the model and go to "Import Asset => Object" and import the .dae file. You'll get a confirmation screen, copy these settings and click okay.
+    <img class="IMGExample" src="Guides/ChargeExample7.png">
+    <br>Make sure to click "Merge both models" and click okay. Import the textures by going to the .bress file and click "Import => Textures". Select ALL of your textures and make sure you set every photo's format to "CMPR" (it will look low quality but it's better than crashes)
+    <img class="IMGExample" src="Guides/ChargeExample8.png">
+    <br>Go to the plus sign on the model and click the Objects folder and click the delete button on the original objects (DON'T DELETE THEM USING CTRL+DEL)
+    <img class="IMGExample" src="Guides/ChargeExample9.png">
+    <br>Go to the Shaders folder and go to the last shader. Expand it and click Stage0 and set the scale to "MultiplyBy2". If you have transparent texures, go to its material in the Materials Folder and set them to these EXACT settings.
+    <img class="IMGExample" src="Guides/ChargeExample10.png">
+    <br>Open the PMP Editor and open the pmp file in there. Open the Group 0x0007 and ignore all of the Objects EXCEPT "0x0001" and "0x0002". These are the start and goal. Open the kcl in the KMP Editor and add 2 objects. One is for the start and one is the Goal. Copy and paste the values from the KMP Editor into the PMP Editor and save in the PMP Editor (It will ask you to Save As, just rename it). Replace the original pmp file in BrawlCrate and then save the file.
+    <br><br>In order to test it, go to Config in Dolphin, then Paths and add the folder with your Wii Play Stuff with the "sys" folder. Open it and if you did it right, it should work!
+    <img class="IMGExample" src="Guides/ChargeExample11.png">
+    <br>Hopefully this helps! I'll have better info in the future, but I wanted to share my knowledge to you.
   </div>
     </body>
 </html>
